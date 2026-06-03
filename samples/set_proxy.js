@@ -2,7 +2,7 @@ import { launch } from 'puppeteer';
 
 (async () => {
     const browser = await launch({
-        args: ['--proxy-server=http://38.154.203.95:5863']
+        args: [`--proxy-server=${process.env.PROXY_SERVER}`]
     });
     const page = await browser.newPage();
 
