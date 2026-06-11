@@ -34,11 +34,11 @@ Step 3: In order to run your Puppeteer on LambdaTest cloud you will need to set 
 To the Puppeteer scripts in this repository on LambdaTest cloud plaform. 
 Use the following command:
 ```
-    node samples/screenshot.js 
+    node samples/set_proxy.js 
 ```
 ### View your Puppeteer results
 The LambdaTest Automation Dashboard is where you can see the results of your executed Puppeteer scripts on the LambdaTest platform.
 
 The below screenshot of LambdaTest Automation Dashboard shows the Puppeteer build on the left and the build sessions associated with the selected build on the right.
 
-![results](./screenshot_puppeteer.png)
+![results](./puppeteer-proxy-terminal.png)
