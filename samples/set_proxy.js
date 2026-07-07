@@ -3,16 +3,6 @@ import { launch } from 'puppeteer';
 
 (async () => {
 
-    const proxyServerList = [
-        'http://proxy1.example.com:8080',
-        'http://proxy2.example.com:8080',
-        'http://209.127.138.10:5784',
-    ];
-
-    const randomProxy = proxyServerList[Math.floor(Math.random() * proxyServerList.length)]
-
-
-
     // Launch the browser with the proxy server argument
     const browser = await launch({
         args: [`--proxy-server=${process.env.PROXY_SERVER}`]
@@ -26,6 +16,9 @@ import { launch } from 'puppeteer';
     await page.goto('https://api.ipify.org');
     const ip = await page.$eval('body', el => el.textContent.trim());
     console.log('Page IP Address:', ip);
+
+    // set test status to passed
+    await page.evaluate(_ => { }, `lambdatest_action: ${JSON.stringify({ action: 'setTestStatus', arguments: { status: 'passed', remark: "Test Passed" } })}`);
 
     await browser.close();
 

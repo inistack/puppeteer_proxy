@@ -10,9 +10,11 @@ export async function remoteBrowserPage() {
             'build': 'puppeteer-proxy-build',
             'name': 'Puppeteer Proxy Test',
             'resolution': '1366x768',
-            'user': process.env.LT_USERNAME || "Your Username",
-            'accessKey': process.env.LT_ACCESS_KEY || "Your Access Key",
-            'network': true
+            'user': process.env.TM_USERNAME || "Your Username",
+            'accessKey': process.env.TM_ACCESS_KEY || "Your Access Key",
+            'network': true,
+            'tunnel': true,
+            'tunnelName': "ProxyTunnel",
         }
     };
 
