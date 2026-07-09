@@ -20,17 +20,23 @@ Step 3: In order to run your Puppeteer on TestMu AI (formerly LambdaTest) cloud 
 
 ![access_key](./access_key_username.png)
 
+Step 4: Obtain your proxy server URL from your proxy provider and it as an environment variable `PROXY_SERVER` in your `.env` file.
+Keep your proxy server details as environment variables to avoid exposing it in a public repo. 
+
+> [!NOTE]
+> Replace placeholder values for all environment variables such as `LT_USERNAME`, `LT_ACCESS_KEY` and `PROXY_SERVER` with actual values from your TestMu AI account and proxy provider. 
+
 **Windows**
 ```
-    set TM_USERNAME="YOUR_TESTMUAI_USERNAME"
-    set TM_ACCESS_KEY="YOUR_TESTMUAI_ACCESS_KEY"
+    set LT_USERNAME="YOUR_TESTMUAI_USERNAME"
+    set LT_ACCESS_KEY="YOUR_TESTMUAI_ACCESS_KEY"
     set PROXY_SERVER=”YOUR_PROXY_SERVER”
 
 ```
 **Linux/macOS**
 ```
-    export TM_USERNAME="YOUR_TESTMUAI_USERNAME"
-    export TM_ACCESS_KEY="YOUR_TESTMUAI_ACCESS_KEY"
+    export LT_USERNAME="YOUR_TESTMUAI_USERNAME"
+    export LT_ACCESS_KEY="YOUR_TESTMUAI_ACCESS_KEY"
     export PROXY_SERVER=”YOUR_PROXY_SERVER”
 
 ```

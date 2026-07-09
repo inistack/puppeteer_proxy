@@ -1,5 +1,5 @@
 'use strict';
-import { connect, launch } from 'puppeteer';
+import { connect } from 'puppeteer';
 
 export async function remoteBrowserPage() {
     const capabilities = {
