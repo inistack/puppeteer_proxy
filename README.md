@@ -24,21 +24,23 @@ Step 4: Obtain your proxy server URL from your proxy provider and it as an envir
 Keep your proxy server details as environment variables to avoid exposing it in a public repo. 
 
 > [!NOTE]
-> Replace placeholder values for all environment variables such as `LT_USERNAME`, `LT_ACCESS_KEY` and `PROXY_SERVER` with actual values from your TestMu AI account and proxy provider. 
+> Replace placeholder values for all environment variables such as `LT_USERNAME`, `LT_ACCESS_KEY`, `PROXY_SERVER`, `PROXY_USERNAME`, and `PROXY_PASSWORD`  with actual values from your TestMu AI account and proxy provider. 
 
 **Windows**
 ```
-    set LT_USERNAME="YOUR_TESTMUAI_USERNAME"
-    set LT_ACCESS_KEY="YOUR_TESTMUAI_ACCESS_KEY"
+    set LT_USERNAME="YOUR_LAMBDATEST_USERNAME"
+    set LT_ACCESS_KEY="YOUR_LAMBDATEST_ACCESS_KEY"
     set PROXY_SERVER=”YOUR_PROXY_SERVER”
-
+    set PROXY_USERNAME=”YOUR_PROXY_USERNAME”
+    set PROXY_PASSWORD=”YOUR_PROXY_PASSWORD”
 ```
 **Linux/macOS**
 ```
-    export LT_USERNAME="YOUR_TESTMUAI_USERNAME"
-    export LT_ACCESS_KEY="YOUR_TESTMUAI_ACCESS_KEY"
+    export LT_USERNAME="YOUR_LAMBDATEST_USERNAME"
+    export LT_ACCESS_KEY="YOUR_LAMBDATEST_ACCESS_KEY"
     export PROXY_SERVER=”YOUR_PROXY_SERVER”
-
+    set PROXY_PASSWORD=”YOUR_PROXY_USERNAME”
+    set PROXY_PASSWORD=”YOUR_PROXY_PASSWORD”
 ```
 ### Executing The Puppeteer Scripts
 To the Puppeteer scripts in this repository on TestMu AI (formerly LambdaTest) cloud plaform. 
